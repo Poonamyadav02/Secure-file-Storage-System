@@ -1,0 +1,29 @@
+<h2>🧑‍💼 Admin Dashboard</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>User</th>
+            <th>Email</th>
+            <th>File</th>
+            <th>Uploaded At</th>
+            <th>Download</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in data %}
+        <tr>
+            <td>{{ row.username }}</td>
+            <td>{{ row.email }}</td>
+            <td>{{ row.filename or '-' }}</td>
+            <td>{{ row.upload_time or '-' }}</td>
+            <td>
+                {% if row.filename %}
+                <a href="{{ url_for('download_file', filename=row.filename) }}" class="btn btn-sm btn-primary">Download</a>
+                {% else %}
+                N/A
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
