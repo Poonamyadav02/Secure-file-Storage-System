@@ -1,3 +1,3 @@
 # Secure-file-Storage-System
-A cloud-based file storage application that ensures data security, confidentiality, and availability. This system allows users to securely upload, store, and retrieve files using encryption techniques and access control policies. It integrates AW.S S3 for scalable storage, IAM-based authentication for controlled access, and serve
-first commit
+The Secure File Storage System is a cloud-based application designed to provide safe, scalable, and reliable file storage for individuals and organizations. Built with a focus on data security, the system ensures that files are encrypted both in transit and at rest, preventing unauthorized access and maintaining user privacy.
+This system integrates AWS S3 for highly available storage, uses server-side encryption (AES-256), and implements role-based access control to protect sensitive files. It is suitable for use cases like document management, confidential data storage, and secure file sharing.
